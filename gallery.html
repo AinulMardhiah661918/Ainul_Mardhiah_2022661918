@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Gallery </title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+</head>
+<body>
+
+<div class= "header">
+<hI style ="font-size: 35px;"> AINUL WEBSITE </hI>
+</div> 
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about_me.html">About Me</a>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="hobby.html">Hobby</a>
+   <a class="active" href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<br> <br> 
+
+<center> 
+<p class="title">
+GALLERY
+</p>
+
+<p class="subtitle">
+My Family 
+</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 11</div>
+  <img src="resource/image/family1.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 11</div>
+  <img src="resource/image/family2.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 11</div>
+  <img src="resource/image/family3.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 11</div>
+  <img src="resource/image/family4.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 11</div>
+  <img src="resource/image/family5.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 11</div>
+  <img src="resource/image/family6.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 11</div>
+  <img src="resource/image/family7.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 11</div>
+  <img src="resource/image/family8.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 11</div>
+  <img src="resource/image/family9.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 11</div>
+  <img src="resource/image/family10.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 11</div>
+  <img src="resource/image/family11.jpg" style="width:80%">
+</div>
+
+<div style="text-align:center">
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span> 
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+</div>
+
+<br> <br> <br> 
+
+<p> My Friends </p> 
+<div class="scroll-container"> 
+
+ <img src="resource/image/friend1.jpg" alt="friends width="600" height="400">
+  
+ <img src="resource/image/friend3.jpg" alt="friends width="600" height="400">
+
+ <img  src="resource/image/friend4.jpg" alt="friends width="600" height="400">
+
+ <img src="resource/image/friend5.jpg" alt="friends width="600" height="400">
+
+ <img src="resource/image/friend8.jpg" alt="friends width="600" height="400">
+     
+ <img src="resource/image/friend7.jpg" alt="friends width="600" height="400">
+
+ <img src="resource/image/friend6.jpg" alt="friends width="600" height="400">
+
+ <img src="resource/image/friend9.jpg"alt="friends width="600" height="400">
+ </div>
+
+<br><br><br>
+
+<center>
+<p class="subtitle">
+Video from my gallery 
+</p> 
+
+<video width="80%" autoplay muted loop> 
+<source src="resource/video/beach.mp4" type="video/mp4">
+</video> 
+
+<br><br><br>
+<video width="80%" controls> 
+<source src="resource/video/dday.mp4" type="video/mp4">
+</video> 
+</center>
+
+
+<br><br><br>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<br> <br> <br> 
+<div class="footer">
+<p> &copy; 2024 Ainul Website. All right reserved. </p> 
+<p> Last update : <span id="demo"> </span> </p>
+ 
+<script> 
+let text = document.lastModified; 
+document.getElementById("demo").innerHTML = text; 
+</script>
+</div>
+
+</body>
+</html>
+

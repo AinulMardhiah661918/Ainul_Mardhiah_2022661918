@@ -1,0 +1,151 @@
+body{ 
+  background-color: #F5F5DC;
+} 
+
+.header { 
+  padding: 60px; 
+  text-align: center; 
+  background:  #C8AD7F ;
+  color: #AA6C39 ; 
+  font-size: 20 px;
+  font-family: 'Courier New', Courier, monospace;
+}
+ 
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #C8AD7F ;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#AA6C39 ;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #AA6C39;
+  color: white;
+}
+
+.footer{
+  position: fixed; 
+  bottom: 0; 
+  background: #C19A6B; 
+  color: black; 
+  text-align: left;
+  width: 100% ; 
+} 
+
+p.title{
+  font-family: Tahoma, sans-serif; 
+  font-size: 30px; 
+  font-weight: bold; 
+  text-align: center; 
+  color: #AA6C39;
+} 
+
+p.subtitle{ 
+  font-family: Georgia; 
+  font-size: 20px; 
+} 
+
+p.text{
+  font-family: Goergia; 
+  font-size: 15px; 
+} 
+
+.slideshow-container{
+  max-width:1000px;
+  position: relative;
+  margin:auto;
+}
+
+.numbertext{
+  color:#f2f2f2;
+  font-size: 12px; 
+  padding:8px 12px; 
+  position: absolute; 
+  top: 0; 
+} 
+
+.fade{ 
+  animation-name: fade;
+  animation-duration: 1.5s; 
+} 
+
+@keyframes fade{ 
+  from{opacity: .4} 
+  to{opacity:1} 
+} 
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.float-left{
+  float: left; 
+  margin-right: 20px; 
+} 
+
+div.scroll-container{ 
+  background-color: #333; 
+  overflow: auto; 
+  white-space: nowrap; 
+  padding: 10px; 
+} 
+
+div.scroll-container img{ 
+padding: 10px;
+} 
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.box img {
+  width: 100px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.text h2 {
+  margin-top: 0;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
+.justified-text{ 
+  text-align: justify; 
+} 
